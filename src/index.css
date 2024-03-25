@@ -1,0 +1,389 @@
+#icon{
+    height:70px;
+    width:150px;
+}
+
+#maiindiv{
+    top:10px;
+    position: absolute;
+    display: flex;
+    gap:110px;
+}
+#btnall{
+    margin-left:100px;
+}
+#btn{
+    height:50px;
+    width:150px;
+    border: none;
+    font-weight: 500;
+    background-color: white;
+    font-size:16px;
+}
+#btn:hover{
+    background-color: hsl(0, 13%, 92%);
+    border-radius:30px;
+}
+#innerdiv{
+    margin-left:120px;
+display: flex;
+gap:30px;
+}
+.twoicon{
+    margin-top:5px;
+    border: 1px solid gainsboro;
+    height:30px;
+    width:70px;
+    display: flex;
+    gap:10px;
+    border-radius:50px;
+    padding-top:5px;
+    padding-left:10px;
+    background-color: white;
+}
+.twoicon:hover{
+    box-shadow:5px  5px 5px rgb(241, 238, 238);
+}
+#notmal {
+margin-top:12px;
+}
+#topnav{
+    top:0px;
+  z-index: 9999;
+    position: fixed;
+    height:90px;
+    width:1370px;
+    background-color: white;
+    margin-right:5px;
+    box-shadow:0px 0px 0px black;
+    /* border: 1px solid black; */
+}
+#navaba{
+    top:80px;
+    position: relative;
+    width:800px;
+    border-radius:300px;
+    height:60px;
+    box-shadow: 0px 0px 1px black;
+    margin-left:250px;
+    background-color: white;
+    border: 1px solid black;
+}
+#btnscon{
+    display: flex;
+    gap:30px;
+    margin-left:40px;
+}
+#divtagp{
+    margin-top:-10px;
+    width:150px;
+    height:50px;
+}
+#divtagp:hover{
+    border-radius:30px;
+    background-color: gainsboro;
+}
+#navbar1{
+    margin-left:30px;
+    top:120px;
+    position: relative;
+    display: flex;
+    gap:21px;
+}
+#navbar1 img{
+    height:35px;
+    width:35px;
+}
+.plane-switch {
+    --dot: #fff;
+    --street: #6B6D76;
+    --street-line: #A8AAB4;
+    --street-line-mid: #C0C2C8;
+    --sky-1: #60A7FA;
+    --sky-2: #2F8EFC;
+    --light-1: rgba(255, 233, 0, 1);
+    --light-2: rgba(255, 233, 0, .3);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .plane-switch input {
+    display: none;
+  }
+  
+  .plane-switch input + div {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 25px;
+    padding: 1px;
+    border-radius: 13px;
+    background: linear-gradient(90deg, var(--street) 0%, var(--street) 25%, var(--sky-1) 75%, var(--sky-2) 100%) left var(--p, 0%) top 0;
+    background-position-x: var(--p, 0%);
+    background-size: 400% auto;
+    transition: background-position 0.6s;
+  }
+  
+  .plane-switch input + div:before, .plane-switch input + div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateX(var(--s, 0));
+    transition: transform 0.3s;
+  }
+  
+  .plane-switch input + div:before {
+    width: 42px;
+    right: 2px;
+    top: 4px;
+    height: 1px;
+    background: var(--street-line);
+    box-shadow: 0 16px 0 0 var(--street-line);
+  }
+  
+  .plane-switch input + div:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    left: 23px;
+    top: 1px;
+    -webkit-animation: lights2 2s linear infinite;
+    animation: lights2 2s linear infinite;
+    box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+  }
+  
+  .plane-switch input + div span {
+    display: block;
+    position: absolute;
+  }
+  
+  .plane-switch input + div span.street-middle {
+    top: 12px;
+    left: 21px;
+    width: 3px;
+    height: 1px;
+    transform: translateX(var(--s, 0));
+    background: var(--street-line-mid);
+    box-shadow: 5px 0 0 var(--street-line-mid), 10px 0 0 var(--street-line-mid), 15px 0 0 var(--street-line-mid), 20px 0 0 var(--street-line-mid), 25px 0 0 var(--street-line-mid);
+    transition: transform 0.3s;
+  }
+  
+  .plane-switch input + div span.cloud {
+    width: 12px;
+    height: 4px;
+    border-radius: 2px;
+    background: #fff;
+    position: absolute;
+    top: var(--ct, 8px);
+    left: 100%;
+    opacity: var(--co, 0);
+    transition: opacity 0.3s;
+    -webkit-animation: clouds2 2s linear infinite var(--cd, 0s);
+    animation: clouds2 2s linear infinite var(--cd, 0s);
+  }
+  
+  .plane-switch input + div span.cloud:before, .plane-switch input + div span.cloud:after {
+    content: "";
+    position: absolute;
+    transform: translateX(var(--cx, 0));
+    border-radius: 50%;
+    width: var(--cs, 5px);
+    height: var(--cs, 5px);
+    background: #fff;
+    bottom: 1px;
+    left: 1px;
+  }
+  
+  .plane-switch input + div span.cloud:after {
+    --cs: 6px;
+    --cx: 4px;
+  }
+  
+  .plane-switch input + div span.cloud.two {
+    --ct: 20px;
+    --cd: 1s;
+    opacity: var(--co-2, 0);
+  }
+  
+  .plane-switch input + div div {
+    display: table;
+    position: relative;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 50%;
+    background: var(--dot);
+    transform: translateX(var(--x, 0));
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.35, 1.2);
+  }
+  
+  .plane-switch input + div div svg {
+    width: 13px;
+    height: 13px;
+    display: block;
+    color: var(--c, var(--street));
+    transition: color 0.6s;
+  }
+  
+  .plane-switch input:checked + div {
+    --p: 100%;
+    --x: 25px;
+    --s: -50px;
+    --c: var(--sky-2);
+    --co: .8;
+    --co-2: .6;
+  }
+  
+  @keyframes lights2 {
+    20%, 30% {
+      box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2), 8px 0 0 var(--light-1), 8px 21px 0 var(--light-1), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+    }
+  
+    55%, 65% {
+      box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-1), 16px 21px 0 var(--light-1);
+    }
+  
+    90%, 100% {
+      box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+    }
+  }
+  
+  @keyframes clouds2 {
+    97% {
+      transform: translateX(-72px);
+      visibility: visible;
+    }
+  
+    98%, 100% {
+      visibility: hidden;
+    }
+  
+    99% {
+      transform: translateX(-72px);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  #arrow{
+    width:40px;
+    margin-top:120px;
+    margin-right:10px;
+    padding-top:10px;
+    text-align: center;
+    border-radius:30px;
+    height:40px;
+        /* border: 1px solid white;
+        background-color: #C0C2C8; */
+
+  }
+  #fliterr{
+    margin-top:130px;
+  }
+  #fliterr button{
+    height:40px;
+    width:90px;
+    border-radius:10px;
+    background-color: #fff;
+  }
+  #btnchech{
+    margin-top:130px;
+  }
+  #btnchech button{
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius:10px;
+    display: flex;
+    padding-top:2px;
+    gap:1px;
+  }
+  #btnchech button p{
+    font-size: 13px;
+  }
+  #divtagsearch{
+    height:40px;
+    color:white;
+    text-align: center;
+    border-radius:100%;
+    width:40px;
+    margin-top:10px;
+    margin-right: 30px;
+    background-color: #ff385c;
+  }
+  #navabara{
+    z-index:99999;
+margin-top:80px;
+    height:30px;
+    width:1350px;
+    background-color: white;
+    color:black;
+    padding-bottom:30px;
+    position: fixed;
+  }
+  #navaba{
+    margin-top: -70px;
+  }
+  #comter{
+    top:60px;
+    position: relative;
+  }
+
+  #homec{
+    top:190px;
+    position: relative;
+  }
+  #flexitems{
+    margin-top:0px;
+    display: grid;
+    grid-template-columns:    330px    330px    330px    330px;
+    grid-template-rows:   330px   330px    330px    330px;
+    margin-left:20px;
+    row-gap:100px;
+  }
+
+  #footerhome{
+    top:300px;
+    position: relative;
+  }
+  #flextop{
+    
+margin-top:-20px;
+    display: flex;
+gap:20px;
+  }
+  #topsds{
+    top:70px;
+    position: fixed;
+    width: 1350px;
+    height:170px;
+    z-index:9999;
+    background-color: white;
+  }
+  #iundr{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+  }
+  Link{
+    text-decoration: none;
+    color: black;
+  }
+  #navbar1{
+    gap:32px;
+  }
+ 
+  #ptagdow{
+    padding-top:15px;
+  }
+
+  #divtagbtn{
+    z-index:9999999;
+    margin-left:600px;
+    height:200px;
+    width:200px;
+    border-radius:10px;
+    border: 1px solid black;
+    background-color: white;
+  }

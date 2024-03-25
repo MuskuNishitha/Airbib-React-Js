@@ -1,0 +1,13 @@
+#cardt{
+    height:440px;
+    width:320px;
+    line-height:5px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius:15px;
+}
+#cardt img{
+    border-radius: 15px;
+    height:270px;
+    width:400px;
+}
